@@ -11,7 +11,13 @@ todo 정산
 정산 상태에 따른 상태 값을 구성하여 enum 클래스와 매핑을 진행한다.
 ->완료
 
-mybatis상태에서 entity와 dto 의 구분이 필요할지 ? (jpa와 다르게 쿼리로써 데이터구성이 가능)
+참고
+https://m.blog.naver.com/kkforgg/220910969555<br>
+https://www.podo-dev.com/blogs/120<br>
+https://www.holaxprogramming.com/2015/11/12/spring-boot-mybatis-typehandler/
+
+
+mybatis상태에서 entity와 dto 의 구분이 필요할지 ? jpa와 다르게 쿼리로써 데이터구성이 가능한거같은데..
 -> DTO or VO로 해결보는 방식 ? 
 
 각 수수료율을 db에서 도출 후 코드 단의 금액 계산 컴포넌트를 작성한다. 
@@ -21,3 +27,7 @@ mybatis상태에서 entity와 dto 의 구분이 필요할지 ? (jpa와 다르게
 
 UI상 노출되어야할 selectbox를 enum 변수로써 통신하도록 한다.
 -> 작업요
+
+참고
+
+https://github.com/jojoldu/blog-code/tree/master/java/enum-mapper
