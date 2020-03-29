@@ -1,8 +1,10 @@
 ---
 title: "리펙토링 해보기"
 date: 2020-03-20 10:20:20 -0400
-categories: enum interface refactoring
+categories: enum interface
 ---
+
+
 꿈에서도 생각난 api 리펙토링부분 .. 무한 if 지옥에서 탈출하는 방법을 찾아보고 꼭 맞는걸 찾아 적용하기로 하였다.
 
 참고링크
