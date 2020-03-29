@@ -1,6 +1,6 @@
 ---
 title: "리펙토링 해보기"
-date: 2020-03-20 10:20:20 -0400
+date: 2020-03-29 10:20:20 -0400
 categories: enum interface
 ---
 
