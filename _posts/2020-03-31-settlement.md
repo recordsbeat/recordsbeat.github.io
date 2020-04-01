@@ -122,20 +122,20 @@ listSettlement 부분은 딱히 볼 것이 없으나 추후에 검색 필터 및
 ```
 update : function(status){	
 			var _this = this;
-			var dtoArray=new Array();
+			var dtoList=new Array();
 			$(".select").each(function(){
 				if($(this).is(':checked')){
 					var temp= new Object()
 					temp.resIdx = $(this).data('id');
 					temp.status = status;
-					dtoArray.push(temp);
+					dtoList.push(temp);
 				}					
 			});
-			console.log(dtoArray);
+			console.log(dtoList);
 			
 			$.ajax({
 				url : "/settlement/saveStatus", //컨트롤러 URL
-				data : JSON.stringify(dtoArray),
+				data : JSON.stringify(dtoList),
 				dataType : 'json',
 				type : 'POST',
 				contentType: 'application/json',
