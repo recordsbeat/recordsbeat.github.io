@@ -115,7 +115,8 @@ public class IndexController {
 	}
 }
 
-```<br>
+```
+<br>
 <br>
 검색과 조회는 GET매핑으로 진행된다고 rest api에서 이야기한다.<br>
 <br>
@@ -149,7 +150,8 @@ public class SettlementController {
 		return result;
 	}
 }
-```<br>
+```
+<br>
 <br>
 Put매핑을 통해 해당 기능을 명시하였다.(사실 특정row update가 아닌 insert 방식이기 때문에 Post가 맞을지도 모르겠다.)<br>
 <br>
@@ -162,7 +164,8 @@ Put매핑을 통해 해당 기능을 명시하였다.(사실 특정row update가
 <br>
 <br>
 <br>
---------------------------------------------------------------------<br>
+--------------------------------------------------------------------
+<br>
 <br>
 <br>
 두번째는 domain에 대한 나의 개념이 잘못되었던 것.<br>
@@ -223,7 +226,8 @@ domain 혹은 entity로 대조될 수 있는 객체를 쿼리를 통해 임의�
 			FROM TB_CITY
 		WHERE CITY_IDX = #{cityIdx}
 	</select>
-```<br>
+```
+<br>
 <br>
 오늘은 대단하진 않지만 테스트 코드로 돌려봤다.<br>
 <br>
@@ -253,7 +257,8 @@ public class SettlementServiceTest {
 
 }
 
-```<br>
+```
+<br>
 <br>
 덕분에 매핑 잘되는지 빠르게 확인했습니다...<br>
 <br>
