@@ -116,6 +116,7 @@ public class IndexController {
 }
 
 ```
+
 <br>
 <br>
 검색과 조회는 GET매핑으로 진행된다고 rest api에서 이야기한다.<br>
@@ -124,10 +125,14 @@ public class IndexController {
 <br>
 그래서 최초에는 GET 매핑 검색 필터링을 위해서는 post매핑을 받아들이도록 설정하였다.<br>
 <br>
-(사실 form submit method를 get방식으로 처리해도 되긴 하지만 url이 너무 지저분해져서 post를 유지하기로 결정)<br>
+(사실 form submit method를 get방식으로 처리해도 되긴 하지만 url이 너무 지저분해져서 post를 유지하기로 결정)
+<br>
 <br>
 <br>
 restcontroller
+
+
+
 ```
 
 @RequiredArgsConstructor
@@ -151,6 +156,8 @@ public class SettlementController {
 	}
 }
 ```
+
+
 <br>
 <br>
 Put매핑을 통해 해당 기능을 명시하였다.(사실 특정row update가 아닌 insert 방식이기 때문에 Post가 맞을지도 모르겠다.)<br>
@@ -204,8 +211,12 @@ domain 혹은 entity로 대조될 수 있는 객체를 쿼리를 통해 임의�
 </mapper>
 
 ```
+
+
 <br>
 <br>
+
+
 ```
 <select id="selectSettlementByResIdx" resultMap="ResultMap.settlement">
 		SELECT 
@@ -233,6 +244,8 @@ domain 혹은 entity로 대조될 수 있는 객체를 쿼리를 통해 임의�
 <br>
 레알 편하긴하다<br>
 <br>
+
+
 ```
 
 @RunWith(SpringRunner.class)
@@ -258,6 +271,7 @@ public class SettlementServiceTest {
 }
 
 ```
+
 <br>
 <br>
 덕분에 매핑 잘되는지 빠르게 확인했습니다...<br>
