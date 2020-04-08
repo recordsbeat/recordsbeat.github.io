@@ -15,7 +15,11 @@ categories: domainmodel domain entity
 (N+M 상황)<br>
 이는 결국 각각 연관객체에 필요한 부분까지만 명시를 해두어야 했고 아래와 같이 extend를 사용해 완벽히 로드되어야할(entity성격)<br>
 resultMap과 연관객체로 사용될 resultMap을 분리하였다.<br>
-<br>
+
+
+
+
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
@@ -173,7 +177,8 @@ resultMap과 연관객체로 사용될 resultMap을 분리하였다.<br>
 
 </mapper>
 ```
-<br>
+
+
 그리하야 열심히 짜둔 outer 쿼리를 사용하여 이모저모 연관객체를 모아올 수 있었다.<br>
 <br>
 <br>
@@ -243,7 +248,9 @@ entity의 연관 객체로써 매핑되어야할 쿼리가 아니라면 굳이 e
 <br>
 <br>
 실행에 옮겼습니다.<br>
-<br>
+
+
+
 ```
 <sql id="sqlWhere">
 		<include refid="Function.checkEmpty"/>
@@ -352,6 +359,8 @@ Entity를 먼저 잡고 DB를 구성하느냐의 차이가 보인다.<br>
 <br>
 마지막으로 엉겁결에 java8테스트 코드를 작성했던 부분<br>
 <br>
+
+
 ```
 	@Test
 	@Ignore
@@ -370,6 +379,8 @@ Entity를 먼저 잡고 DB를 구성하느냐의 차이가 보인다.<br>
 		
 	}
 ```
+
+
 쓰다보니 알 것 같고 쓰다 보니 편하다. <br>
 
 
