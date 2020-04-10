@@ -11,7 +11,7 @@ categories: multipartfile formdata
 업무용 컴퓨터가 아닌 개인컴퓨터로 작성하는 관계로 러프한 코드만 작성하는걸로<br>
 <br>
 원하던 구조는 다음과같다.<br>
-<br>
+
 ```
 class dto {
  field 1;
@@ -26,10 +26,12 @@ class filevo{
   fileUrl;
 }
 ```
-<br>
+
 각 파일은 자체의 이름과 파일 객체를 갖고 있고 이를 s3에 업로드 한 뒤 url을 반환 받아 도메인 모델로 변환한다.<br>
 문제는 자바스크립트에서였다.<br>
-<br>
+
+
+
 ```
 form = new FormData($('#frm')[0]);
 var fileArray = new Array();
@@ -42,16 +44,23 @@ $('.file').foreach(function(){
 });
 form.append(temp);
 ```
+
+
+
 <br>
 문제가 되는 부분은<br>
 사용자 UI단에서 사용되는 필요한 문서 업로드 목록은 FileCode라는 Enum 집단에서 추출해온 것이며<br>
 각 input file name필드 값은 enum의 key값과 매칭되어있다.<br>
-<br>
+
+
+
 ```
 foreach(data : FileCode)
 <input type="file" class="files" name ="data.key"/>
 ```
-<br><br>
+
+
+
 이렇게 FileCode 분류된 코드 집단을 UI에서 자동적으로 뿌리고 각 파일이 어떤 용도인지 FileCode로 판별하는 것이 의도였다.<br>
 <br>
 이전에 사용했던 json 형태의 통신이 아닌 formData - multipart 통신을 사용하다보니<br>
