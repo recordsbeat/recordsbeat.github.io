@@ -9,4 +9,6 @@
 
 _posts 폴더에 각 날짜 업무 및 생각들을 적어 둡니다.
 
-recordsbeat.github.io에서도 확인하실 수 있습니다.
+https://recordsbeat.github.io/
+
+에서도 확인하실 수 있습니다.
