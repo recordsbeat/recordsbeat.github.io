@@ -1,6 +1,6 @@
 ---
 title: "파일 업로드와 다중 insert"
-date: 2020-03-24 13:28:28 -0400
+date: 2020-04-13 20:25:00 -0400
 categories: base64 mybatis insert
 ---
 <br>
