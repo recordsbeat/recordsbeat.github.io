@@ -228,7 +228,7 @@ FileUtils<br>
 context path를 가져오는 부분을 더 간단히 하고 싶었으나 실패.. fileutils 클래스에 의존성 주입하였다.<br>
 <br>
 uploadBase64Image<br>
-스트림을 써서 리턴하고 싶었으나 File 형태로 컨버팅되기전 fileCode를 어떻게 지내고 있을지 몰라 일단 진행..<br>
+스트림을 써서 리턴하고 싶었으나 File 형태로 컨버팅되기전 fileCode를 어떻게 지니고 있을지 몰라 일단 진행..<br>
 <br>
 Base64ToImgDecoder<br>
 인터넷에서 긁어온 base64toFile 부분 알아서 확장자도 확정해줘서 좋다.<br>
