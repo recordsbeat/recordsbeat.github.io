@@ -1,6 +1,7 @@
 # recordsbeat.github.io
 
-블로그 이전했습니다 !
+블로그 이전했습니다 !<br>
+2020년 04월 27일 기점으로 새로운 포스트는 아래 주소에서 진행합니다.<br>
 https://velog.io/@recordsbeat
 
 
