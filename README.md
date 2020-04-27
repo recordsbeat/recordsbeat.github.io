@@ -1,5 +1,9 @@
 # recordsbeat.github.io
 
+블로그 이전했습니다 !
+https://velog.io/@recordsbeat
+
+
 제 Github을 찾아주셔서 감사합니다.
 
 부족한 부분을 채우기 위해
